@@ -1,30 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anillos</title>
     <link rel="stylesheet" href="../../../style.css">
-    <style>
-      .product-gallery img {
-        width: 150px;
-        height: 150px;
-      }
-    </style>
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
-        <h1>Anillos</h1>
+        <img src="../../../assets/imagenes/IMG-20250723-WA0223.jpg" alt="Logo" class="logo">
+        <h1>Joyas Exclusivas</h1>
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">Inicio</a></li>
+                <li><a href="../../contacto/index.html">Contacto</a></li>
+                <li><a href="../../acerca-de/index.html">Acerca de</a></li>
+                <li><a href="../../categorias/index.html">Categorías</a></li>
+            </ul>
+        </nav>
+        <form class="buscador">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">🔍</button>
+        </form>
     </header>
+
+    <!-- Contenido principal -->
     <main>
+        <h2 class="titulo-seccion">Colección de Anillos</h2>
         <section class="product-gallery">
-            <img src="../../../assets/images/Anillos/IMG-20250723-WA0259.jpg" alt="Anillo 1">
-            <img src="../../../assets/images/Anillos/IMG-20250723-WA0260.jpg" alt="Anillo 2">
-            <img src="../../../assets/images/Anillos/IMG-20250723-WA0261.jpg" alt="Anillo 3">
+            <div class="producto">
+                <img src="../../../assets/imagenes/Anillos/IMG-20250723-WA0259.jpg" alt="Anillo 1">
+                <p class="precio">$750</p>
+            </div>
+            <div class="producto">
+                <img src="../../../assets/imagenes/Anillos/IMG-20250723-WA0260.jpg" alt="Anillo 2">
+                <p class="precio">$820</p>
+            </div>
+            <div class="producto">
+                <img src="../../../assets/imagenes/Anillos/IMG-20250723-WA0261.jpg" alt="Anillo 3">
+                <p class="precio">$900</p>
+            </div>
         </section>
     </main>
+
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 Joyas Exclusivas. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Joyas Exclusivas - Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
