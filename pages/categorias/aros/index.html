@@ -1,37 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aros</title>
+    <title>Aros - Del Mar Joyas</title>
+    <!-- Agregando estilos de la página principal para nav elegante -->
     <link rel="stylesheet" href="../../../style.css">
-    <style>
-      .product-gallery img {
-        width: 150px;
-        height: 150px;
-      }
-    </style>
+    <link rel="stylesheet" href="../../../styles/category-base.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Aros</h1>
-    </header>
-    <main>
-        <section class="product-gallery">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0240.jpg" alt="Aro 1">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0241.jpg" alt="Aro 2">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0242.jpg" alt="Aro 3">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0243.jpg" alt="Aro 4">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0244.jpg" alt="Aro 5">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0245.jpg" alt="Aro 6">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0246.jpg" alt="Aro 7">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0247.jpg" alt="Aro 8">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0248.jpg" alt="Aro 9">
-            <img src="../../../assets/images/Aros/IMG-20250723-WA0249.jpg" alt="Aro 10">
-        </section>
+    <!-- Reemplazando navbar simple con navegación elegante y buscador -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../../../index.html">
+                    <span class="brand-text">Del Mar</span>
+                    <span class="brand-accent">Joyas</span>
+                </a>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar productos..." class="search-input">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="../../../index.html" class="nav-link">Inicio</a>
+                <div class="nav-dropdown">
+                    <a href="../index.html" class="nav-link dropdown-toggle">Categorías</a>
+                    <div class="dropdown-menu">
+                        <a href="../aros/index.html" class="dropdown-item active">Aros</a>
+                        <a href="../anillos/index.html" class="dropdown-item">Anillos</a>
+                        <a href="../collares-y-cadenas/index.html" class="dropdown-item">Collares</a>
+                        <a href="../pulseras/index.html" class="dropdown-item">Pulseras</a>
+                        <a href="../abridores/index.html" class="dropdown-item">Abridores</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link">Contacto</a>
+            </div>
+            
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="category-page">
+        <header class="category-header">
+            <h1 class="category-title">Aros en Plata 925</h1>
+            <p class="category-description">Descubre nuestra elegante colección de aros en plata 925, perfectos para cualquier ocasión</p>
+            <!-- Agregando filtros de productos -->
+            <div class="category-filters">
+                <div class="filter-group">
+                    <label for="priceFilter">Filtrar por precio:</label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="all">Todos los precios</option>
+                        <option value="low">Hasta $45.000</option>
+                        <option value="medium">$45.000 - $55.000</option>
+                        <option value="high">Más de $55.000</option>
+                    </select>
+                </div>
+                <div class="results-count">
+                    <span id="resultsCount">10 productos encontrados</span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="products-grid" id="productsGrid">
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0240.jpg" alt="Aros Elegantes" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Elegantes</h3>
+                    <p class="product-description">Hermosos aros en plata 925 con diseño clásico</p>
+                    <div class="product-price">$45.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0241.jpg" alt="Aros Modernos" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Modernos</h3>
+                    <p class="product-description">Diseño contemporáneo en plata 925 pulida</p>
+                    <div class="product-price">$52.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0242.jpg" alt="Aros Vintage" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Vintage</h3>
+                    <p class="product-description">Estilo vintage con acabado artesanal único</p>
+                    <div class="product-price">$48.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0243.jpg" alt="Aros Delicados" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Delicados</h3>
+                    <p class="product-description">Diseño delicado perfecto para uso diario</p>
+                    <div class="product-price">$38.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0244.jpg" alt="Aros Sofisticados" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Sofisticados</h3>
+                    <p class="product-description">Elegancia y sofisticación en cada detalle</p>
+                    <div class="product-price">$55.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0245.jpg" alt="Aros Geométricos" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Geométricos</h3>
+                    <p class="product-description">Formas geométricas contemporáneas</p>
+                    <div class="product-price">$50.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0246.jpg" alt="Aros Clásicos" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Clásicos</h3>
+                    <p class="product-description">Diseño atemporal que nunca pasa de moda</p>
+                    <div class="product-price">$42.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0247.jpg" alt="Aros Únicos" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Únicos</h3>
+                    <p class="product-description">Pieza única con diseño exclusivo</p>
+                    <div class="product-price">$60.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0248.jpg" alt="Aros Artesanales" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Artesanales</h3>
+                    <p class="product-description">Trabajo artesanal de alta calidad</p>
+                    <div class="product-price">$47.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Aros/IMG-20250723-WA0249.jpg" alt="Aros Especiales" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Aros Especiales</h3>
+                    <p class="product-description">Para momentos especiales y únicos</p>
+                    <div class="product-price">$53.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2025 Joyas Exclusivas. Todos los derechos reservados.</p>
-    </footer>
+    
+    <!-- Agregando JavaScript para búsqueda y filtros -->
+    <script src="../../../script.js"></script>
+    <script>
+        // Datos de productos para filtrado
+        const products = [
+            { name: "Aros Elegantes", price: 45000, description: "Hermosos aros en plata 925 con diseño clásico", element: null },
+            { name: "Aros Modernos", price: 52000, description: "Diseño contemporáneo en plata 925 pulida", element: null },
+            { name: "Aros Vintage", price: 48000, description: "Estilo vintage con acabado artesanal único", element: null },
+            { name: "Aros Delicados", price: 38000, description: "Diseño delicado perfecto para uso diario", element: null },
+            { name: "Aros Sofisticados", price: 55000, description: "Elegancia y sofisticación en cada detalle", element: null },
+            { name: "Aros Geométricos", price: 50000, description: "Formas geométricas contemporáneas", element: null },
+            { name: "Aros Clásicos", price: 42000, description: "Diseño atemporal que nunca pasa de moda", element: null },
+            { name: "Aros Únicos", price: 60000, description: "Pieza única con diseño exclusivo", element: null },
+            { name: "Aros Artesanales", price: 47000, description: "Trabajo artesanal de alta calidad", element: null },
+            { name: "Aros Especiales", price: 53000, description: "Para momentos especiales y únicos", element: null }
+        ];
+
+        // Inicializar referencias a elementos DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            const productCards = document.querySelectorAll('.product-card');
+            products.forEach((product, index) => {
+                product.element = productCards[index];
+            });
+
+            // Configurar búsqueda
+            const searchInput = document.getElementById('searchInput');
+            const priceFilter = document.getElementById('priceFilter');
+            const resultsCount = document.getElementById('resultsCount');
+
+            function filterProducts() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const priceRange = priceFilter.value;
+                let visibleCount = 0;
+
+                products.forEach(product => {
+                    const matchesSearch = product.name.toLowerCase().includes(searchTerm) || 
+                                        product.description.toLowerCase().includes(searchTerm);
+                    
+                    let matchesPrice = true;
+                    if (priceRange === 'low') {
+                        matchesPrice = product.price <= 45000;
+                    } else if (priceRange === 'medium') {
+                        matchesPrice = product.price > 45000 && product.price <= 55000;
+                    } else if (priceRange === 'high') {
+                        matchesPrice = product.price > 55000;
+                    }
+
+                    if (matchesSearch && matchesPrice) {
+                        product.element.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        product.element.style.display = 'none';
+                    }
+                });
+
+                resultsCount.textContent = `${visibleCount} productos encontrados`;
+            }
+
+            searchInput.addEventListener('input', filterProducts);
+            priceFilter.addEventListener('change', filterProducts);
+        });
+    </script>
 </body>
 </html>

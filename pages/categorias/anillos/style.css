@@ -1,0 +1,23 @@
+.category-title {
+    color: #9b59b6;
+}
+
+.product-price {
+    color: #9b59b6;
+}
+
+.product-button {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.product-button:hover {
+    background: linear-gradient(135deg, #8e44ad, #7d3c98);
+}
+
+.breadcrumb-link {
+    color: #9b59b6;
+}
+
+.breadcrumb-link:hover {
+    color: #8e44ad;
+}

@@ -3,50 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anillos</title>
+    <title>Anillos - Del Mar Joyas</title>
+    <!-- Agregando estilos de la página principal para nav elegante -->
     <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../styles/category-base.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header>
-        <img src="../../../assets/imagenes/IMG-20250723-WA0223.jpg" alt="Logo" class="logo">
-        <h1>Joyas Exclusivas</h1>
-        <nav>
-            <ul>
-                <li><a href="../../../index.html">Inicio</a></li>
-                <li><a href="../../contacto/index.html">Contacto</a></li>
-                <li><a href="../../acerca-de/index.html">Acerca de</a></li>
-                <li><a href="../../categorias/index.html">Categorías</a></li>
-            </ul>
-        </nav>
-        <form class="buscador">
-            <input type="text" placeholder="Buscar...">
-            <button type="submit">🔍</button>
-        </form>
-    </header>
-
-    <!-- Contenido principal -->
-    <main>
-        <h2 class="titulo-seccion">Colección de Anillos</h2>
-        <section class="product-gallery">
-            <div class="producto">
-                <img src="../../../assets/imagenes/Anillos/IMG-20250723-WA0259.jpg" alt="Anillo 1">
-                <p class="precio">$750</p>
+    <!-- Reemplazando navbar simple con navegación elegante y buscador -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../../../index.html">
+                    <span class="brand-text">Del Mar</span>
+                    <span class="brand-accent">Joyas</span>
+                </a>
             </div>
-            <div class="producto">
-                <img src="../../../assets/imagenes/Anillos/IMG-20250723-WA0260.jpg" alt="Anillo 2">
-                <p class="precio">$820</p>
+            
+            <div class="nav-search">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar productos..." class="search-input">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
             </div>
-            <div class="producto">
-                <img src="../../../assets/imagenes/Anillos/IMG-20250723-WA0261.jpg" alt="Anillo 3">
-                <p class="precio">$900</p>
+            
+            <div class="nav-links">
+                <a href="../../../index.html" class="nav-link">Inicio</a>
+                <div class="nav-dropdown">
+                    <a href="../index.html" class="nav-link dropdown-toggle">Categorías</a>
+                    <div class="dropdown-menu">
+                        <a href="../aros/index.html" class="dropdown-item">Aros</a>
+                        <a href="../anillos/index.html" class="dropdown-item active">Anillos</a>
+                        <a href="../collares-y-cadenas/index.html" class="dropdown-item">Collares</a>
+                        <a href="../pulseras/index.html" class="dropdown-item">Pulseras</a>
+                        <a href="../abridores/index.html" class="dropdown-item">Abridores</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link">Contacto</a>
             </div>
-        </section>
+            
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="category-page">
+        <header class="category-header">
+            <h1 class="category-title">Anillos en Plata 925</h1>
+            <p class="category-description">Encuentra el anillo perfecto en nuestra colección de plata 925</p>
+            <!-- Agregando filtros de productos -->
+            <div class="category-filters">
+                <div class="filter-group">
+                    <label for="priceFilter">Filtrar por precio:</label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="all">Todos los precios</option>
+                        <option value="low">Hasta $70.000</option>
+                        <option value="medium">$70.000 - $80.000</option>
+                        <option value="high">Más de $80.000</option>
+                    </select>
+                </div>
+                <div class="results-count">
+                    <span id="resultsCount">3 productos encontrados</span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="products-grid" id="productsGrid">
+            <div class="product-card">
+                <img src="../../../assets/images/Anillos/IMG-20250723-WA0259.jpg" alt="Anillo Elegante" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Anillo Elegante</h3>
+                    <p class="product-description">Anillo refinado en plata 925 con diseño atemporal</p>
+                    <div class="product-price">$65.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Anillos/IMG-20250723-WA0260.jpg" alt="Anillo Moderno" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Anillo Moderno</h3>
+                    <p class="product-description">Diseño contemporáneo con líneas limpias</p>
+                    <div class="product-price">$72.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Anillos/IMG-20250723-WA0261.jpg" alt="Anillo Especial" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Anillo Especial</h3>
+                    <p class="product-description">Para momentos únicos e inolvidables</p>
+                    <div class="product-price">$85.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+        </div>
     </main>
+    
+    <!-- Agregando JavaScript para búsqueda y filtros -->
+    <script src="../../../script.js"></script>
+    <script>
+        // Datos de productos para filtrado
+        const products = [
+            { name: "Anillo Elegante", price: 65000, description: "Anillo refinado en plata 925 con diseño atemporal", element: null },
+            { name: "Anillo Moderno", price: 72000, description: "Diseño contemporáneo con líneas limpias", element: null },
+            { name: "Anillo Especial", price: 85000, description: "Para momentos únicos e inolvidables", element: null }
+        ];
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 Joyas Exclusivas - Todos los derechos reservados.</p>
-    </footer>
+        // Inicializar referencias a elementos DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            const productCards = document.querySelectorAll('.product-card');
+            products.forEach((product, index) => {
+                product.element = productCards[index];
+            });
+
+            // Configurar búsqueda
+            const searchInput = document.getElementById('searchInput');
+            const priceFilter = document.getElementById('priceFilter');
+            const resultsCount = document.getElementById('resultsCount');
+
+            function filterProducts() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const priceRange = priceFilter.value;
+                let visibleCount = 0;
+
+                products.forEach(product => {
+                    const matchesSearch = product.name.toLowerCase().includes(searchTerm) || 
+                                        product.description.toLowerCase().includes(searchTerm);
+                    
+                    let matchesPrice = true;
+                    if (priceRange === 'low') {
+                        matchesPrice = product.price <= 70000;
+                    } else if (priceRange === 'medium') {
+                        matchesPrice = product.price > 70000 && product.price <= 80000;
+                    } else if (priceRange === 'high') {
+                        matchesPrice = product.price > 80000;
+                    }
+
+                    if (matchesSearch && matchesPrice) {
+                        product.element.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        product.element.style.display = 'none';
+                    }
+                });
+
+                resultsCount.textContent = `${visibleCount} productos encontrados`;
+            }
+
+            searchInput.addEventListener('input', filterProducts);
+            priceFilter.addEventListener('change', filterProducts);
+        });
+    </script>
 </body>
 </html>
