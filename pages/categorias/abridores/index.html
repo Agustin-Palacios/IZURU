@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abridores - Del Mar Joyas</title>
+    <link rel="stylesheet" href="../../../styles/navbar.css">
+    <link rel="stylesheet" href="../../../styles/category-base.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <main class="category-page">
+
+        <header class="category-header">
+            <h1 class="category-title">Abridores en Plata 925</h1>
+            <p class="category-description">Funcionales y elegantes abridores en plata 925 para complementar tus joyas</p>
+        </header>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="../../../assets/images/Abridores/IMG-20250723-WA0251.jpg" alt="Abridor Clásico" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Abridor Clásico</h3>
+                    <p class="product-description">Abridor tradicional en plata 925 con acabado pulido</p>
+                    <div class="product-price">$25.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Abridores/IMG-20250723-WA0252.jpg" alt="Abridor Moderno" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Abridor Moderno</h3>
+                    <p class="product-description">Diseño contemporáneo con líneas elegantes</p>
+                    <div class="product-price">$30.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Abridores/IMG-20250723-WA0253.jpg" alt="Abridor Delicado" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Abridor Delicado</h3>
+                    <p class="product-description">Diseño sutil y refinado</p>
+                    <div class="product-price">$22.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Abridores/IMG-20250723-WA0254.jpg" alt="Abridor Artesanal" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Abridor Artesanal</h3>
+                    <p class="product-description">Trabajo artesanal con detalles únicos</p>
+                    <div class="product-price">$35.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Abridores/IMG-20250723-WA0255.jpg" alt="Abridor Elegante" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Abridor Elegante</h3>
+                    <p class="product-description">Elegancia en cada detalle</p>
+                    <div class="product-price">$28.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Abridores/IMG-20250723-WA0256.jpg" alt="Abridor Especial" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Abridor Especial</h3>
+                    <p class="product-description">Para ocasiones especiales</p>
+                    <div class="product-price">$32.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="../../../assets/images/Abridores/IMG-20250723-WA0257.jpg" alt="Abridor Único" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Abridor Único</h3>
+                    <p class="product-description">Diseño exclusivo e irrepetible</p>
+                    <div class="product-price">$38.000</div>
+                    <button class="product-button">Ver Detalles</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        fetch('../../../components/navbar-categories.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando navbar:', error));
+    </script>
+</body>
+</html>

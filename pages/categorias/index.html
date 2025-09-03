@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - Del Mar Joyas</title>
+    <link rel="stylesheet" href="../../styles/navbar.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    
+    <main class="categories-main">
+        <h1 class="categories-title">Nuestras Categorías</h1>
+        
+        <div class="categories-grid">
+            <div class="category-card">
+                <a href="aros/index.html">
+                    <img src="../../assets/images/Aros/IMG-20250723-WA0240.jpg" alt="Aros">
+                    <h3>Aros</h3>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="collares-y-cadenas/index.html">
+                    <img src="../../assets/images/Collares/IMG-20250723-WA0224.jpg" alt="Collares">
+                    <h3>Collares y Cadenas</h3>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="abridores/index.html">
+                    <img src="../../assets/images/Abridores/IMG-20250723-WA0251.jpg" alt="Abridores">
+                    <h3>Abridores</h3>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="pulseras/index.html">
+                    <img src="../../assets/images/Pulseras/IMG-20250723-WA0234.jpg" alt="Pulseras">
+                    <h3>Pulseras</h3>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="anillos/index.html">
+                    <img src="../../assets/images/Anillos/IMG-20250723-WA0259.jpg" alt="Anillos">
+                    <h3>Anillos</h3>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        fetch('../../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando navbar:', error));
+    </script>
+</body>
+</html>

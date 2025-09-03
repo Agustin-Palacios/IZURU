@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Mar Joyas - Productos en Plata 925</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+     Navegación elegante con glassmorphism y buscador funcional 
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Del Mar</h1>
+                <span>Joyas</span>
+            </div>
+            
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="Buscar joyas..." class="search-input">
+                <button class="search-btn">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#categorias" class="nav-link">Categorías</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+         Hero section completamente rediseñado con presentación elegante 
+        <section class="hero" id="inicio">
+            <div class="hero-background">
+                <div class="hero-pattern"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Elegancia en Plata 925</h1>
+                    <p class="hero-subtitle">Descubre nuestra exclusiva colección de joyas artesanales</p>
+                    <p class="hero-description">Cada pieza cuenta una historia única, diseñada con pasión y creada con los más altos estándares de calidad</p>
+                    <div class="hero-actions">
+                        <a href="#categorias" class="btn-primary">Explorar Colección</a>
+                        <a href="#contacto" class="btn-secondary">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="featured-jewelry">
+                        <img src="assets/images/Collares/IMG-20250723-WA0224.jpg" alt="Joya destacada">
+                        <div class="jewelry-badge">Nuevo</div>
+                        <div class="jewelry-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features-container">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Plata 925 Pura</h3>
+                    <p>Calidad certificada en cada pieza</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                            <path d="M8 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Diseño Exclusivo</h3>
+                    <p>Piezas únicas y originales</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>Envío Seguro</h3>
+                    <p>Entrega protegida a todo el país</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories" id="categorias">
+            <div class="section-header">
+                <h2>Nuestras Colecciones</h2>
+                <p>Explora cada categoría y encuentra la joya perfecta para cada ocasión</p>
+            </div>
+            
+            <div class="categories-grid">
+                <article class="category-card" data-category="aros">
+                    <a href="pages/categorias/aros/index.html">
+                        <div class="card-image">
+                            <img src="assets/images/Aros/IMG-20250723-WA0240.jpg" alt="Aros en plata 925">
+                            <div class="card-overlay">
+                                <span class="view-collection">Ver Colección</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Aros</h3>
+                            <p>Elegancia que enmarca tu rostro</p>
+                            <span class="card-arrow">→</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="category-card" data-category="collares">
+                    <a href="pages/categorias/collares-y-cadenas/index.html">
+                        <div class="card-image">
+                            <img src="assets/images/Collares/IMG-20250723-WA0224.jpg" alt="Collares y cadenas">
+                            <div class="card-overlay">
+                                <span class="view-collection">Ver Colección</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Collares y Cadenas</h3>
+                            <p>Sofisticación que resalta tu cuello</p>
+                            <span class="card-arrow">→</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="category-card" data-category="abridores">
+                    <a href="pages/categorias/abridores/index.html">
+                        <div class="card-image">
+                            <img src="assets/images/Abridores/IMG-20250723-WA0251.jpg" alt="Abridores">
+                            <div class="card-overlay">
+                                <span class="view-collection">Ver Colección</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Abridores</h3>
+                            <p>Funcionalidad con estilo único</p>
+                            <span class="card-arrow">→</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="category-card" data-category="pulseras">
+                    <a href="pages/categorias/pulseras/index.html">
+                        <div class="card-image">
+                            <img src="assets/images/Pulseras/IMG-20250723-WA0234.jpg" alt="Pulseras">
+                            <div class="card-overlay">
+                                <span class="view-collection">Ver Colección</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Pulseras</h3>
+                            <p>Delicadeza que adorna tu muñeca</p>
+                            <span class="card-arrow">→</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="category-card" data-category="anillos">
+                    <a href="pages/categorias/anillos/index.html">
+                        <div class="card-image">
+                            <img src="assets/images/Anillos/IMG-20250723-WA0259.jpg" alt="Anillos">
+                            <div class="card-overlay">
+                                <span class="view-collection">Ver Colección</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Anillos</h3>
+                            <p>Símbolos de amor y compromiso</p>
+                            <span class="card-arrow">→</span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer" id="contacto">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Del Mar Joyas</h3>
+                    <p>Creando momentos especiales con joyas únicas en plata 925. Cada pieza es una obra de arte diseñada para durar toda la vida.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#categorias">Categorías</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li>📧 info@delmarjoyas.com</li>
+                            <li>📱 +54 9 11 1234-5678</li>
+                            <li>📍 Buenos Aires, Argentina</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Síguenos</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Del Mar Joyas. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
